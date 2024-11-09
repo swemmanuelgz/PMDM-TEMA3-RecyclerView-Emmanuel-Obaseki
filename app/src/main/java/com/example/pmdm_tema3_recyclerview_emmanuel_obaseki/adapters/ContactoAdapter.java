@@ -26,18 +26,18 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.Contac
     @Override
     public ContactoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_main, parent, false);
+                .inflate(R.layout.item_contacto, parent, false);
         return new ContactoViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ContactoViewHolder holder, int position) {
         Contacto contacto = contactoList.get(position);
-        holder.imgFoto.setImageResource(contacto.getFotoResId());
         holder.txtNombre.setText(contacto.getNombre());
         holder.txtApellidos.setText(contacto.getApellidos());
         holder.txtEmail.setText(contacto.getEmail());
         holder.txtTelefono.setText(contacto.getTelefono());
+        holder.imgFoto.setImageResource(contacto.getFotoResId());
     }
 
     @Override

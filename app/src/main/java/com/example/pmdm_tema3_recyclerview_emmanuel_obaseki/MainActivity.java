@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
             List<Contacto> contactos = new ArrayList<>();
             contactos.add(new Contacto(R.drawable.contacto1, "Ana", "Pérez", "ana.perez@example.com", "612345678"));
-            contactos.add(new Contacto(R.drawable.contacto2, "Carlos", "Gómez", "carlos.gomez@example.com", "678912345"));
+            contactos.add(new Contacto(R.drawable.contacto1, "Carlos", "Gómez", "carlos.gomez@example.com", "678912345"));
             // Añade más contactos según sea necesario
 
             ContactoAdapter adapter = new ContactoAdapter(contactos);
